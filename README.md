@@ -36,6 +36,6 @@ Make sure you have Python installed.
 ### Step-by-step:
 
 ```bash
-git clone https://github.com/your-username/number-guessing-game.git
-cd number-guessing-game
+git clone https://github.com/sumon-chandro-shil/Number-Guessing-Game
+cd Number-Guessing-Game
 python main.py
