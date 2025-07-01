@@ -1,4 +1,3 @@
-# Library Import
 import random
 
 # Level input function
