@@ -12,9 +12,8 @@ def get_level_range():
         elif level in ['hard', '3']:
             return 1, 100
         else:
-            print("Invalid level! Please choose Easy, Medium, or Hard (or 1/2/3).")
+            print("Invalid level! Please choose Easy, Medium, or Hard or (1/2/3).")
 
-# Main game functions
 def play_game():
     low, high = get_level_range()
     number = random.randint(low, high)
@@ -39,24 +38,16 @@ def play_game():
         except ValueError:
             print("Please enter a valid number!")
 
-# Loop of the main program (for playing repeatedly)
 while True:
     play_game()
 
     while True:
-        choice = input("Do you want to play again? (yes/y or no/n): ").strip().lower()
+        choice = input("Do you want to play again? (yes/y) or (no/n): ").strip().lower()
         if choice in ['yes', 'y']:
             break
         elif choice in ['no', 'n']:
             print("Thanks for playing! Goodbye!")
             exit()
         else:
-            print("Invalid input! Please type yes/y or no/n.")
+            print("Invalid input! Please type (yes/y) or (no/n).")
 
-
-"""What's in this game:
-    1.How to validate user input,
-    2.Generating random numbers,
-    3.Level selection,
-    4.Handling incorrect input,
-    5.Using while loops and functions."""
